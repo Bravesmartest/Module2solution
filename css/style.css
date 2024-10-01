@@ -1,0 +1,94 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* Container for sections */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Section Styles */
+.section {
+    position: relative;
+    border: 2px solid black;
+    background-color: #918f8f;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    margin-top: 40px; /* For spacing between text and section title */
+}
+
+/* Floating Title Container Styles */
+.title-container {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    font-size: 1.25em;
+    float: right;
+    text-align: center;
+    width: 150px;
+    white-space: nowrap; /* Prevents title from wrapping */
+}
+
+/* Specific IDs for different title colors */
+#chicken-title {
+    background-color: #ff9999; 
+}
+
+#beef-title {
+    background-color: #e93e3e; 
+}
+
+#sushi-title {
+    background-color: #faeb7a; 
+}
+
+/* Desktop View (992px and above) */
+@media (min-width: 992px) {
+    .section {
+        width: 32%;
+    }
+}
+
+/* Tablet View (between 768px and 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 48%;
+    }
+
+    /* Full-width for last section */
+    #sushi-section {
+        width: 100%;
+    }
+}
+
+/* Mobile View (767px and below) */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
