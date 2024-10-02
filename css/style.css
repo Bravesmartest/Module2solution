@@ -20,27 +20,24 @@ h1 {
     font-size: 2em;
 }
 
-/* Container for sections */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/* Section Styles */
 .section {
     position: relative;
     border: 2px solid black;
-    background-color: #918f8f;
+    background-color: #a4a2a2;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .section p {
-    margin-top: 40px; /* For spacing between text and section title */
+    margin-top: 40px; 
 }
 
-/* Floating Title Container Styles */
 .title-container {
     position: absolute;
     top: -2px;
@@ -51,16 +48,16 @@ h1 {
     float: right;
     text-align: center;
     width: 150px;
-    white-space: nowrap; /* Prevents title from wrapping */
+   
 }
 
-/* Specific IDs for different title colors */
 #chicken-title {
     background-color: #ff9999; 
 }
 
 #beef-title {
-    background-color: #e93e3e; 
+    color: #fcfafa;
+    background-color: #ae2727; 
 }
 
 #sushi-title {
